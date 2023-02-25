@@ -7,6 +7,10 @@ const port=8000;
 // use express router
 app.use('/',require('./router'));
 
+// set up view engine
+app.set('view engine', 'ejs');
+app.use('views','./views');
+
 app.listen(port,function(err){
     if(err){
         console.log(`Error: ${err}`); //interpolation7
