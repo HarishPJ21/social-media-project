@@ -9,7 +9,7 @@ app.use('/',require('./router'));
 
 // set up view engine
 app.set('view engine', 'ejs');
-app.use('views','./views');
+app.set('views','./views');
 
 app.listen(port,function(err){
     if(err){

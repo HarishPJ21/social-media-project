@@ -1,3 +1,6 @@
 module.exports.home = function(req,res){
-    return res.end('express is up for codial')
+    return res.render('home',{
+        title: "Home",
+        header: "Social media"
+    });
 }; 
